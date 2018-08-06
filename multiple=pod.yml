@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Pod 
-metadat: 
+metadata: 
   name: frontend
 spec:
-  container: 
+  containers: 
   - name: db
     image: mysql 
     env:
@@ -13,10 +13,10 @@ spec:
       requests: 
         memory: "64Mi"
         cpu: "250m"
-     limits: 
-       memory: "128Mi"
-       cpu: "500m"
-  - name: wp
+      limits: 
+        memory: "128Mi"
+        cpu: "500m"
+  - name: wq
     image: wordpress 
     resources:
       requests: 
